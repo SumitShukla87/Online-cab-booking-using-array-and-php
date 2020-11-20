@@ -55,46 +55,47 @@ if (isset($_POST['submit'])) {
     } elseif ($cab==2) {
         if ($distance>0 && $distance <=10) {
             $fare =  150 + 14.50 * ($distance);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
         } elseif ($distance>10 && $distance<=60) {
             $rem_dis = $distance - 10;
             $fare = 150 + (10*14.50) + 13*($rem_dis);
-            if ($weight>=0 && $weight<10) {
+            
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
         } elseif ($distance>50 && $distance<=160) {
             $rem_dis1 = $distance - 10;
             $rem_dis2 = $rem_dis1 - 50;
-            $fare = 150 + (10*14.50) + (50*13) + 11.20*($rem_dis2);
-            if ($weight>=0 && $weight<10) {
+            $fare = 150 + (10*14.50) + (50*13) + 11.20*($rem_dis2);            
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
@@ -102,16 +103,16 @@ if (isset($_POST['submit'])) {
             $rem_dis1 = $distance - 10;
             $rem_dis2 = $rem_dis1 - 50;
             $rem_dis3 = $rem_dis2 - 100;
-            $fare = 150 + (10*14.50) + (50*13)+(100*11.20) + 9.50*($rem_dis3);
-            if ($weight>=0 && $weight<10) {
+            $fare = 150 + (10*14.50) + (50*13)+(100*11.20) + 9.50*($rem_dis3);            
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
@@ -119,30 +120,30 @@ if (isset($_POST['submit'])) {
     } elseif ($cab==3) {
         if ($distance>0 && $distance <=10) {
             $fare =  200 + 15.50 * ($distance);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
         } elseif ($distance>10 && $distance<=60) {
             $rem_dis = $distance - 10;
             $fare = 200 + (10*15.50) + 14*($rem_dis);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
@@ -150,15 +151,15 @@ if (isset($_POST['submit'])) {
             $rem_dis1 = $distance - 10;
             $rem_dis2 = $rem_dis1 - 50;
             $fare = 200 + (10*15.50) + (50*14) + 12.20*($rem_dis2);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
@@ -167,15 +168,15 @@ if (isset($_POST['submit'])) {
             $rem_dis2 = $rem_dis1 - 50;
             $rem_dis3 = $rem_dis2 - 100;
             $fare = 200 + (10*15.50) + (50*14)+(100*12.20) + 10.50*($rem_dis3);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = 50+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = 100+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = 200+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
@@ -183,30 +184,30 @@ if (isset($_POST['submit'])) {
     } elseif ($cab==4) {
         if ($distance>0 && $distance <=10) {
             $fare =  250 + 16.50 * ($distance);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = (2*50)+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = (2*100) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = (2*200) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
         } elseif ($distance>10 && $distance<=60) {
             $rem_dis = $distance - 10;
             $fare = 250 + (10*16.50) + 15*($rem_dis);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = (2*50)+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = (2*100) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = (2*200) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
@@ -214,15 +215,15 @@ if (isset($_POST['submit'])) {
             $rem_dis1 = $distance - 10;
             $rem_dis2 = $rem_dis1 - 50;
             $fare = 250 + (10*16.50) + (50*15) + 13.20*($rem_dis2);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = (2*50)+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = (2*100) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = (2*200) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
@@ -231,15 +232,15 @@ if (isset($_POST['submit'])) {
             $rem_dis2 = $rem_dis1 - 50;
             $rem_dis3 = $rem_dis2 - 100;
             $fare = 250 + (10*16.50) + (50*15)+(100*13.20) + 11.50*($rem_dis3);
-            if ($weight>=0 && $weight<10) {
+            if ($weight==0) {
+                echo"<script>alert('Total fare ' +'$fare' +' rs')</script>";
+            } else if ($weight>0 && $weight<10) {
                 $total_fare = (2*50)+ $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>10 && $weight<20) {
+            } else if ($weight>10 && $weight<20) {
                 $total_fare = (2*100) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
-            }
-            if ($weight>20) {
+            } else if ($weight>20) {
                 $total_fare = (2*200) + $fare;
                 echo"<script>alert('Total fare ' +'$total_fare' +' rs')</script>";
             }
