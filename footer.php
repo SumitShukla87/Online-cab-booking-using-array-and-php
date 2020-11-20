@@ -1,14 +1,14 @@
 <footer class="container footer">
     <div class="row">
 
-      <div class="col-lg-7 col-xs-12 col-sm-6 col-md-5">
+      <div class="col-lg-7 col-xs-12 col-sm-10 col-md-5">
         <i class="fa fa-facebook ml-5 p-3 icon"></i>
       <i class="fa fa-twitter p-3 icon"></i>
         <i class="fa fa-instagram p-3 icon"></i>
 
       </div>
       <div class="col-lg-5 col-xs-12 col-sm-12 col-md-7 pl-3 pr-5 pt-3 text-center" id="right-footer">
-        <p>Copyright 2020 © <span class="text-success">CEDCOSS TECHNOLOGIES</span> </p>
+        <p>Copyright 2020 © <span><a href="https://cedcoss.com/" class="text-success">CEDCOSS TECHNOLOGIES</span></a> </p>
 
       </div>
     </div>  

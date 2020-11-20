@@ -8,4 +8,10 @@ $(document).ready(function () {
             $("#luggage").focus();
         }
     });
+    // $(".btn1").click(function(event){
+    //     event.preventDefault();
+    //   });
+});
+$('.lug').keyup(function () { 
+    this.value = this.value.replace(/[^0-9\.]/g,'');
 });

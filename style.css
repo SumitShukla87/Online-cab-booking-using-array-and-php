@@ -7,19 +7,14 @@ body{
     color:rgb(58, 95, 34);
 }
 .bg-form{
-    background: linear-gradient(to right, rgb(16, 105, 117), rgb(206, 168, 168));
-}
-.calc-btn{
-    background: linear-gradient(to right, rgb(117, 16, 16), rgb(101, 173, 60));
-
+    background: linear-gradient(to right, rgb(110, 107, 107), rgb(185, 164, 92));
 }
 .city-taxi-p{
-    width: 100px;
-    margin-left: 100px;
+    width: 30%;
+    margin: auto;
 }
 #booking-details{
     background-image: url("images/111.jpg");
-    padding: 10% !important;
     display: block;
     background-size: cover;
     background-position: center;
@@ -39,16 +34,32 @@ form{
 }
 
 @media (max-width: 575.98px) {      
-    .city-taxi-p{
-        margin-left: 5rem;
+
+    form{
+        padding:0;
     }
+    .h1-form, .p-form {
+        display: none;
+    }
+    #booking-details{
+        padding-top: 1rem;
+    }
+   
 }
-@media (min-width: 768px) and (max-width: 1100px) {
-    .city-taxi-p{
-        margin-left: 50px;
+@media (min-width: 600px) and (max-width: 998px) {
+    .h1-form, .p-form {
+        display: none;
+    }
+    #booking-details{
+        padding-top: 1.5rem;
     }
     .icon{
         font-size:20px;
+        padding-right: 20px;
         color:rgb(58, 95, 34);
     }   
+}
+select{
+    -webkit-appearance:none ;
+    appearance: none;
 }
