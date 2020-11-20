@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.icon{
+    font-size:30px;
+    color:rgb(58, 95, 34);
+}
+.bg-form{
+    background: linear-gradient(to right, rgb(16, 105, 117), rgb(206, 168, 168));
+}
+.calc-btn{
+    background: linear-gradient(to right, rgb(117, 16, 16), rgb(101, 173, 60));
+
+}
+.city-taxi-p{
+    width: 100px;
+    margin-left: 100px;
+}
+#booking-details{
+    background-image: url("images/111.jpg");
+    padding: 10% !important;
+    display: block;
+    background-size: cover;
+    background-position: center;
+}
+.form-details{
+    padding: 1rem;
+}
+form{
+    padding: 1rem;
+}
+.form-control{
+    background-color: rgb(216, 216, 216);
+}
+.input-group-text{
+    border: none;
+      background-color: rgb(216, 216, 216);
+}
+
+@media (max-width: 575.98px) {      
+    .city-taxi-p{
+        margin-left: 5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+    .city-taxi-p{
+        margin-left: 50px;
+    }
+    .icon{
+        font-size:20px;
+        color:rgb(58, 95, 34);
+    }   
+}
